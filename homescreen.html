@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    
+</head>
+<body>
+    <h1> Welcome to fishy shooter </h1>
+    <button onclick = "start()"> Start </button>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        button { 
+            padding: 15px 30px;
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 18px; 
+        }
+    </style>
+    <script>
+        function start(){
+            window.location.href = "game.html";
+        }
+    </script>
+</body>
+</html>

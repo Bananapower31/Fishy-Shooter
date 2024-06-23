@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+body * {
+    box-sizing: border-box;
+}
+#box {
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    clip-path: inset(0 0 0 0);
+    border: 5px solid black;
+}
+#player {
+    background: url(img/fishy.png);
+    height:100px;
+    width:150px;
+    margin-top:-80px;
+    position: absolute;
+    bottom: 500px;
+    left: 0px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#starfish {
+    background: url(img/starfish.png);
+    height:100px;
+    width:100px;
+    left: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+}
+#shark {
+    background: url(img/shark.png);
+    height:100px;
+    width:100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: auto;
+    right: 0;
+    transform: scaleX(-1);
+}
+.bullet {
+  position: absolute;
+  background-color: red;
+}
+.enemies {
+    height:100px;
+    width:100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: auto;
+    right: 0;
+}
+#score {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier;
+    color: black;
+    
+}
+#background {
+    height: 100%;
+    width: 3090px;
+    background: white url(img/background.png) repeat-x;
+    background-size: cover;
+    position: absolute;
+    opacity: .75;
+    animation: slide 1s linear infinite;
+}
+#gameover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 1000px;
+    height: 600px;
+    background: url(img/gameover.png);
+}
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-1545px, 0, 0);
+    }
+}
